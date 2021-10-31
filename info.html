@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon" href="Aadhaar.ico" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aadhaar Address Update</title>
+
+  <link rel="stylesheet" href="styles.css">
+  <script src="infojs.js" defer></script>
+  
+</head>
+
+<body>
+ <!-- <div class="card">-->
+    <h1><center>AADHAAR ADDRESS UPDATE</center></h1>
+    
+  </div>
+
+  <br><br>
+
+
+
+<p id="demo"></p>
+
+
+
+  <form method="POST">
+      <div id="act">
+        <label>Name</label>
+        <input type="text" name="Name" id="name" placeholder="Enter your full name" required/>
+        <!--value attribute will stay in the box unless we delete it. placeholder attribute vanishes after we start typing-->
+      </div>
+      <br>
+      <div id="act">
+        <label>Date of Birth</label>
+        <input type="date" name="birthday" id="dob" required />
+      </div>
+      <br>
+      <div id="act">
+        <label>Email</label>
+        <input type="email" name="email" placeholder="Enter your Email Id" id="email" required/>
+      </div>
+      <br>
+      <div id="act">
+        <label>Gender</label>
+        <select name="gender">
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+        <option value="other">Transgender</option>
+        </select>
+      </div>
+      <br>
+      <div id="act">
+        <label>Age</label>
+        <input type="number" name="age" id="age" required/>
+      </div>
+      
+      <!--<div>
+            <input type="button" id="bt" value="Save data to file" onclick="saveFile()" />
+      </div>
+-->
+    </form>
+    <br><br>
+    <!--<div class="actions">-->
+      <button class="btn" onclick="saveFile()" />Submit</button>
+    <!--</div>-->
+
+</body>
+
+</html>
